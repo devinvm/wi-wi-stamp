@@ -1,0 +1,135 @@
+/* ?This is where reusable styling of this template will be.
+   !Will contain things like:
+   * Button styling
+   * Background color styling
+   * padding and margin
+*/
+
+.container {
+  max-width: var(--width-medium);
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+h1::selection,
+h2::selection {
+  color: #111;
+  background: var(--primary-color);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.9rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #000000;
+}
+
+.btn-secondary {
+  margin: 5px 0;
+  background-color: var(--bg-secondary);
+  color: var(--bg-primary);
+}
+
+.btn-primary:hover {
+  background: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-color);
+}
+
+/* Dark mode toggle */
+#switch {
+  display: none;
+}
+
+.theme-switch {
+  display: flex;
+  align-items: center; /* Vertically center items in the row */
+  justify-content: center; /* Optional: centers items horizontally if needed */
+  height: 100%; /* Ensure it takes up the full height of the row */
+}
+
+.toggle-icons {
+  display: inline-block;
+  position: relative; /* Ensures child elements are positioned relative to this container */
+  width: 24px; /* Match icon width */
+  height: 24px; /* Match icon height */
+  cursor: pointer;
+}
+
+.toggle-icons > img {
+  position: absolute; /* Stack images on top of each other */
+  width: 24px;
+  height: 24px;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+    opacity 0.6s cubic-bezier(0.23, 1, 0.32, 1); /* Smooth transitions */
+}
+
+.moon {
+  transform: rotate(10deg);
+  opacity: 1; /* Show moon by default */
+}
+
+.sun {
+  transform: rotate(100deg);
+  opacity: 0; /* Hide sun by default */
+}
+
+#switch:checked + .toggle-icons .moon {
+  transform: rotate(250deg);
+  opacity: 0; /* Hide moon when checked */
+}
+
+#switch:checked + .toggle-icons .sun {
+  transform: rotate(0deg);
+  opacity: 1; /* Show sun when checked */
+}
+
+/* Section Container */
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  margin-top: 8rem;
+  padding: 1rem;
+}
+
+.section-container > div {
+  margin-top: 1rem;
+}
+
+.content-text {
+  text-align: left;
+  margin: 1.5rem 0;
+}
+
+.content-text h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.content-text p {
+  padding: 0.5rem 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .section-container {
+    margin-top: 7rem;
+    text-align: center;
+  }
+
+  .content-text h2 {
+    font-size: 2.5rem;
+  }
+}
