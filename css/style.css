@@ -310,19 +310,14 @@ iframe {
   justify-content: center;
   align-items: center;
   flex-shrink: 0; /* Prevent shrinking */
-  min-width: 200px;
-  min-height: 200px;
-  max-width: 400px;
-  max-height: 400px;
 }
 
 .product-card .icon img {
-  width: 100%;
-  height: auto;
-  min-width: 200px;
-  min-height: 200px;
-  max-width: 400px;
-  max-height: 400px;
+  display: block; /* Ensures no extra space issues */
+  width: 200px; /* This should be relative to the parent */
+  height: auto; /* Maintains aspect ratio */
+  max-width: 200px; /* Constrain max width */
+  max-height: 200px; /* Constrain max height */
 }
 
 .product-card .card-text {
@@ -523,10 +518,9 @@ hr {
   }
 
   .product-card .icon img {
-    min-width: 100px;
-    min-height: 100px;
-    max-width: 200px;
-    max-height: 200px;
+    display: block;
+    max-width: 100px;
+    max-height: 100px;
   }
 
   .product-card .card-text h3 {
