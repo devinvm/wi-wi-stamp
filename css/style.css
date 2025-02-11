@@ -236,7 +236,7 @@ body {
 iframe {
   aspect-ratio: 16 / 9;
   width: 600px;
-  border-radius: 0.5rem; /* Matches the shadow's border-radius */
+  border-radius: 0.5rem;
 }
 
 /* Team */
@@ -249,7 +249,7 @@ iframe {
 }
 
 .team-card {
-  flex: 1 1 calc(50% - 2rem); /* Two cards side by side with gap */
+  flex: 1 1 calc(50% - 2rem);
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -286,7 +286,7 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: space-between; /* Distribute cards evenly */
+  justify-content: space-between;
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
@@ -301,23 +301,23 @@ iframe {
   background: var(--card-background);
   border-radius: 1rem;
   overflow: hidden;
-  flex: 1 1 calc(50% - 1rem); /* Two cards per row, filling width */
-  min-width: 300px; /* Prevent cards from getting too small */
+  flex: 1 1 calc(50% - 1rem);
+  min-width: 300px;
 }
 
 .product-card .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0; /* Prevent shrinking */
+  flex-shrink: 0;
 }
 
 .product-card .icon img {
-  display: block; /* Ensures no extra space issues */
-  width: 200px; /* This should be relative to the parent */
-  height: auto; /* Maintains aspect ratio */
-  max-width: 200px; /* Constrain max width */
-  max-height: 200px; /* Constrain max height */
+  display: block;
+  width: 200px;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .product-card .card-text {
@@ -366,8 +366,8 @@ iframe {
 
 #contact-footer {
   display: flex;
-  justify-content: space-between; /* Space between logo and contact */
-  align-items: center; /* Vertically center */
+  justify-content: space-between;
+  align-items: center;
 }
 
 hr {
@@ -413,7 +413,7 @@ hr {
     grid-template-columns: repeat(2, 1fr);
   }
   .product-card {
-    flex: 1 1 100%; /* Full width, single column */
+    flex: 1 1 100%;
   }
 }
 
@@ -507,7 +507,7 @@ hr {
 
 @media (max-width: 768px) {
   .product-card {
-    flex: 1 1 100%; /* Full width on mobile */
+    flex: 1 1 100%;
   }
 
   .product-card .icon {
