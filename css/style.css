@@ -245,17 +245,19 @@ iframe {
   flex-wrap: wrap;
   gap: 2rem;
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
+  justify-content: space-between;
 }
 
 .team-card {
-  flex: 1 1 calc(50% - 2rem);
+  flex: 1 1 calc(33.33% - 2rem);
   display: flex;
   flex-direction: column;
   align-items: left;
   text-align: left;
   border-radius: 1rem;
   overflow: hidden;
+  min-width: 250px;
 }
 
 .team-card img {
